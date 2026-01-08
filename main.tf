@@ -9,17 +9,6 @@
 # - Sets up the API Gateway for Platform integration
 # - Creates necessary IAM roles for cross-account access
 
-terraform {
-  required_version = ">= 1.6.0"
-
-  required_providers {
-    aws = {
-      source  = "hashicorp/aws"
-      version = ">= 5.0"
-    }
-  }
-}
-
 locals {
   stack_name = "AWSAccelerator-Installer"
 
